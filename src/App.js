@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import PathfindingVisualizer from "./PathfindingVisualizer/PathfindingVisualizer";
+import SortingVisualizer from './sortingVisualizer/SortingVisualizer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="algo">
+      <div className="ada">ADA ppt for <span>dijkstra's algo</span>  and <span>merge sort</span></div>
+        <PathfindingVisualizer></PathfindingVisualizer>
+      </div>
+      <div className="algo">
+        <SortingVisualizer></SortingVisualizer>
+      </div>
     </div>
   );
 }
